@@ -1,4 +1,4 @@
-## Automator script to find the SVN url of selected file(s)
+## Automator script to find the SVN url of selected file(s) (see [automator workflow](../../osx/Library/Services/Copy remote repo url.workflow))
 urls=""
 for f in "$@"
 do
