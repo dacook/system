@@ -1,0 +1,3 @@
+https://github.com/morgant/tools-osx
+http://www.makkintosshu.com/development#tools-osx
+A small collection of command line tools for Mac OS X, incl.: clipcat, dict, eject, ql, swuser, trash & with.

@@ -1,0 +1,4 @@
+[
+  /* http://superuser.com/questions/489711/sublime-text-disable-find-in-selection */
+  { "keys": ["super+f"], "command": "show_panel", "args": { "panel": "find", "in_selection": false } }
+]

@@ -1,0 +1,3 @@
+* Reverse scroll direction (to be same as Windows)
+* homebrew http://brew.sh/
+* add ms office keyboard shortcut EditRedoOrRepeat Cmd+Shift+Z
