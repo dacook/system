@@ -13,5 +13,6 @@ do
 done
 
 if [[ -n "$urls" ]]; then 
-  echo -ne "hey $urls" | pbcopy
+  # todo: remove last linebreak
+  echo -ne "$urls" | pbcopy
 fi;
