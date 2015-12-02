@@ -1,0 +1,1 @@
+Not sure if I can access these setting files directly, but it's easy to sync with Adobe account: go to Photoshop CC > Preferences > Sync Settings... and click download.

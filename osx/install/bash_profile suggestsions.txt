@@ -1,0 +1,1 @@
+* Bash profile suggestsions: http://natelandau.com/my-mac-osx-bash_profile/
