@@ -1,7 +1,9 @@
 
 # Environment Variables
+source ~/system/global/config/colours.sh
 
-# Command Prompt
+# Simple Command Prompt
+PS1='${BLUE}\w \$${RESET} '
 
-#Load my aliases
+# Aliases
 source ~/.bash_aliases

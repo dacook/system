@@ -1,6 +1,6 @@
 # Initialise Preferences
 # todo: finishe this and test and use it
-# also load OS-specific and work-specific stuff..
+# also load OS-specific and work-specific stuff
 
 ## Link version controlled files in the relevant places
 config=$0/../config #~/system/global/config
