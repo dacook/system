@@ -7,3 +7,7 @@ imgpath="$PWD/unsuspicious-image-file.jpg"
 curl -o "$imgpath" "$imgsrc"
 osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \"$imgpath\""
 osascript -e "tell application \"System Events\" to set picture of every desktop to \"$imgpath\""
+
+## More trolling
+echo 'I love David Hasselhoff' | pbcopy
+echo "Also, free chocolates on my desk, come and get them!" | mail -s "I have been Hoffified" melbourne@squiz.net
