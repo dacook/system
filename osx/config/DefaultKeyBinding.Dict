@@ -1,0 +1,48 @@
+/* ~/Library/KeyBindings/DefaultKeyBinding.Dict
+ref:http://heisencoder.net/2008/04/fixing-up-mac-key-bindings-for-windows.html
+
+Here is a rough cheatsheet for syntax.
+Key Modifiers
+^ : Ctrl
+$ : Shift
+~ : Option (Alt)
+@ : Command (Apple)
+# : Numeric Keypad
+
+Non-Printable Key Codes
+
+Up Arrow:     \UF700        Backspace:    \U0008        F1:           \UF704
+Down Arrow:   \UF701        Tab:          \U0009        F2:           \UF705
+Left Arrow:   \UF702        Escape:       \U001B        F3:           \UF706
+Right Arrow:  \UF703        Enter:        \U000A        ...
+Insert:       \UF727        Page Up:      \UF72C
+Delete:       \UF728        Page Down:    \UF72D
+Home:         \UF729        Print Screen: \UF72E
+End:          \UF72B        Scroll Lock:  \UF72F
+Break:        \UF732        Pause:        \UF730
+SysReq:       \UF731        Menu:         \UF735
+Help (Insert):\UF746
+
+*/
+
+{
+"\UF729"   = "moveToBeginningOfLine:";                       /* Home         */
+"@\UF729"  = "moveToBeginningOfDocument:";                   /* Cmd  + Home  */
+"$\UF729"  = "moveToBeginningOfLineAndModifySelection:";     /* Shift + Home */
+"@$\UF729" = "moveToBeginningOfDocumentAndModifySelection:"; /* Shift + Cmd  + Home */
+"\UF72B"   = "moveToEndOfLine:";                             /* End          */
+"@\UF72B"  = "moveToEndOfDocument:";                         /* Cmd  + End   */
+"$\UF72B"  = "moveToEndOfLineAndModifySelection:";           /* Shift + End  */
+"@$\UF72B" = "moveToEndOfDocumentAndModifySelection:";       /* Shift + Cmd  + End */
+"\UF72C"   = "pageUp:";                                      /* PageUp       */
+"\UF72D"   = "pageDown:";                                    /* PageDown     */
+/*"$\UF728"  = "cut:"; */                                        /* Shift + Del  */
+/*"$\UF727"  = "paste:"; */                                      /* Shift + Ins */
+/*"@\UF727"  = "copy:"; */                                       /* Cmd  + Ins  */
+/*"$\UF746"  = "paste:";  */                                     /* Shift + Help */
+/*"@\UF746"  = "copy:";   */                                     /* Cmd  + Help (Ins) */
+/*"@\UF702"  = "moveWordBackward:";*/                            /* Cmd  + LeftArrow */
+/*"@\UF703"  = "moveWordForward:";*/                             /* Cmd  + RightArrow */
+/*"@$\UF702" = "moveWordBackwardAndModifySelection:";*/   /* Shift + Cmd  + Leftarrow */
+/*"@$\UF703" = "moveWordForwardAndModifySelection:";*/   /* Shift + Cmd  + Rightarrow */
+}
