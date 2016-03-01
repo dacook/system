@@ -25,6 +25,10 @@ do
   osascript -e "set volume 10";
   voice=${voices[$RANDOM % ${#voices[@]} ]}
   say -v $voice "balls";
+
+  # And open up a nice picture
+  open $imgpath
+
   # break;
 done
 } &
