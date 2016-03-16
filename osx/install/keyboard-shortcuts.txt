@@ -1,0 +1,11 @@
+There's no easy way to export these, just set these up manually. (Or start using a third party app)
+
+```
+App Shortcuts
+    Mail.app
+        Send    cmd+return
+        Paste and Match Style   cmd+shift+V
+        Paste as Quotation      cmd+alt+V
+    Google Chrome.app
+        View Source cmd+U
+``
