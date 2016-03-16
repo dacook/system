@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customSites</key>
+	<dict>
+		<key>3994E3A5-EA93-45EC-9B92-15CD86AD3398</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>sf</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Search Squiz for '{query}'</string>
+			<key>url</key>
+			<string>https://find.squiz.net/s/search.html?collection=squiz-meta-all&amp;binary=&amp;query={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
