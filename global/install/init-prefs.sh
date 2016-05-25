@@ -1,5 +1,5 @@
 # Initialise Preferences
-# todo: finishe this and test and use it
+# todo: finishe this and test and use it. I don't think pushd likes tilde
 # also load OS-specific and work-specific stuff
 
 ## Link version controlled files in the relevant places
@@ -11,9 +11,9 @@ pushd ~/
 popd
 
 ## Sublime
-# actually, probably do this whole folder, with gitignore for cache type stuff
-pushd "~/Library/Application Support/Sublime Text 3/Packages/User/"
-	ln -snf "$config/Preferences.sublime-settings"
+pushd "~/Library/Application Support/Sublime Text 3/Packages"
+    mv User User.bak
+	ln -snf "$config/sublime/User"
 popd
 
 ## DiffMerge
@@ -28,6 +28,8 @@ git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
+# https://gist.github.com/dacook/7eddd0c97b2844cc9157ba2e2f0470bd
+git config --global alias.hist "log --pretty=format:'%C(yellow)%ad%C(reset) %C(green)%h%C(reset) %C(red)%an%C(reset): %s %C(blue)%d%C(reset)' --graph --date=short"
 ### DiffMerge (http://twobitlabs.com/2011/08/install-diffmerge-git-mac-os-x/)
 git config --global difftool.prompt false
 git config --global difftool.diffmerge.cmd 'diffmerge "$LOCAL" "$REMOTE"'

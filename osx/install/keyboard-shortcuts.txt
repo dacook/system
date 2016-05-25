@@ -1,11 +1,29 @@
 There's no easy way to export these, just set these up manually. (Or start using a third party app)
 
 ```
-App Shortcuts
+Mission Control
+    Move left a space           ctrl+cmd+left  // Not ctrl+left because I keep accidentally pressing it in terminal
+    Move left a right           ctrl+cmd+right
+    Switch to Desktop 1         ctrl+cmd+1  //and so on
+
+Keyboard
+    Move focus to the menu bar  ctrl+/
+    Move focus to active or next window  alt+tab //sound familiar?? This is the same as alt+tab in windows! :D
+    Move focus to status menus  ctrl+shift+/
+
+App Shortcuts  
     Mail.app
-        Send    cmd+return
+        Send                    cmd+return
         Paste and Match Style   cmd+shift+V
         Paste as Quotation      cmd+alt+V
     Google Chrome.app
-        View Source cmd+U
+        View Source             cmd+U //same as firefox
+    Terminal.app
+        shortcuts don't seem to work :(
+    Microsoft Word.app
+        Document Map Pane       cmd+shift+D
+        Paste and Match Formatting  cmd+shift+V
+        Repeat $1               cmd+shift+z //hrmmm can't find a way to do this
+    Firefox.app
+        shortcuts don't seem to work :(
 ``
