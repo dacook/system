@@ -1,0 +1,19 @@
+[
+	// Terminal
+	{ "keys": ["super+shift+t"], "command": "reopen_last_file" }, //override terminal's silly default binding (https://github.com/wbond/sublime_terminal/issues/17)
+	{ "keys": ["ctrl+shift+t"], "command": "open_terminal" },
+	{ "keys": ["super+shift+alt+t"], "command": "open_terminal_project_folder" },
+
+
+
+	// InsertDate: use semi-colon just like Google Sheets.
+	// iso date (YYYY-MM-DD)
+	{ "keys": ["super+;"],
+		"command": "insert_date",
+		"args": {"format": "%Y-%m-%d"} },
+
+	// iso time (HH:MM:SS)
+	{ "keys": ["super+shift+;"],
+		"command": "insert_date",
+		"args": {"format": "%H:%M:%S"} }
+]

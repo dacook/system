@@ -1,0 +1,27 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Advanced CSV",
+		"Color Highlighter",
+		"DocBlockr",
+		"Emmet",
+		"FreeMarker",
+		"Git",
+		"GitHubinator",
+		"Hosts",
+		"HTML-CSS-JS Prettify",
+		"INI",
+		"InsertDate",
+		"MarkdownEditing",
+		"Package Control",
+		"Pretty JSON",
+		"Sass",
+		"Terminal",
+		"Theme - Monokai",
+		"Tomorrow Color Schemes"
+	]
+}

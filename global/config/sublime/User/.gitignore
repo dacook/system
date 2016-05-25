@@ -1,0 +1,6 @@
+# Whitelist only desired files
+*
+!*.gitignore
+!*.sublime-settings
+!*.sublime-keymap
+!*.tmTheme
