@@ -24,10 +24,10 @@ do
   sleep $[RANDOM%3600+1];
   osascript -e "set volume 10";
   voice=${voices[$RANDOM % ${#voices[@]} ]}
-  say -v $voice "balls";
+  say -v "$voice" "balls";
 
   # And open up a nice picture
-  open $imgpath
+  open "$imgpath"
 
   # break;
 done

@@ -2,7 +2,7 @@ There's no easy way to export these, just set these up manually. (Or start using
 
 ```
 Mission Control
-    Move left a space           ctrl+cmd+left  // Not ctrl+left because I keep accidentally pressing it in terminal
+    Move left a space           ctrl+cmd+left  // Not ctrl+left because I keep accidentally pressing it
     Move left a right           ctrl+cmd+right
     Switch to Desktop 1         ctrl+cmd+1  //and so on
 
@@ -18,6 +18,7 @@ App Shortcuts
         Paste as Quotation      cmd+alt+V
     Google Chrome.app
         View Source             cmd+U //same as firefox
+        Task Manager            alt+shift+esc //similar to windows (from memory)
     Terminal.app
         shortcuts don't seem to work :(
     Microsoft Word.app

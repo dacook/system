@@ -19,6 +19,21 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>485F21BB-019A-4D01-AEEE-923C40092BFA</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>hc</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Chat to @{query}</string>
+			<key>url</key>
+			<string>hipchat://hipchat.squiz.net/user/%40{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 		<key>AAFDDCAE-DDCC-488F-A57E-0426BD2F9FFE</key>
 		<dict>
 			<key>enabled</key>

@@ -36,6 +36,7 @@ alias ll="ls -lh"
 alias la="ls -lah"
 alias beep="tput bel"
 alias bell="beep"
+alias hr="echo -e \"\n${RED}-------------${RESET}n\""
 tgz() { tar -cvzf "$1.tgz" "$1"; echo -n "Done: "; du -h "$1.tgz"; } # Because I can never remember how to
 #alias watchlog="watch 'df -h /dev/xvda1; ls -tr *.log; tail `ls -t *.log | head -n1`'" # Watch disk space and most recent log file
 alias pserve="python -m SimpleHTTPServer 8080 2>/dev/null" # Start Python HTTP server in current dir. Note that the browser will cache requests because no uncacheable headers are sent. [There's no easy way](http://stackoverflow.com/questions/12499171/can-i-set-a-header-with-pythons-simplehttpserver).

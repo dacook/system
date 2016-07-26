@@ -29,7 +29,7 @@ git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
 # https://gist.github.com/dacook/7eddd0c97b2844cc9157ba2e2f0470bd
-git config --global alias.hist "log --pretty=format:'%C(yellow)%ad%C(reset) %C(green)%h%C(reset) %C(red)%an%C(reset): %s %C(blue)%d%C(reset)' --graph --date=short"
+git config --global alias.hist "log --pretty=format:'%C(blue)%ad%C(reset) %C(yellow)%h%C(reset) %C(green)%an%C(reset): %s %C(blue)%d%C(reset)' --graph --date=short"
 ### DiffMerge (http://twobitlabs.com/2011/08/install-diffmerge-git-mac-os-x/)
 git config --global difftool.prompt false
 git config --global difftool.diffmerge.cmd 'diffmerge "$LOCAL" "$REMOTE"'

@@ -6,6 +6,7 @@ matrix=/var/www/internet-prod/
 # User specific aliases and functions
 alias matrixsqlclient='sudo -u apache php scripts/matrixsqlclient.php $PWD'
 alias mirror="sudo -u apache php packages/mirror/scripts/mirror.php"
+alias errlog='tail -f data/private/logs/error.log | grep --colour=always " - .*"'
 
 ## Bonus, show me what's here:
 if [ "$TERM" = "xterm-256color" ]; then

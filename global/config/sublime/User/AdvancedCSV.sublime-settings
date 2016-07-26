@@ -1,0 +1,8 @@
+{
+  "delimiter": ",",
+  "auto_quote": true,
+  "delimiter_mapping": {
+    "*.tsv": "\t",
+    "*.psv": "|"
+  }
+}
