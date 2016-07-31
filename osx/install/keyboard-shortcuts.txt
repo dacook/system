@@ -20,11 +20,12 @@ App Shortcuts
         View Source             cmd+U //same as firefox
         Task Manager            alt+shift+esc //similar to windows (from memory)
     Terminal.app
-        shortcuts don't seem to work :(
+        Show Previous Tab       control+shift+tab  //or cmd+alt+left, or cmd+1
+        Show Next Tab           control+tab        //or cmd+alt+right, or cmd+2
     Microsoft Word.app
         Document Map Pane       cmd+shift+D
         Paste and Match Formatting  cmd+shift+V
         Repeat $1               cmd+shift+z //hrmmm can't find a way to do this
     Firefox.app
-        shortcuts don't seem to work :(
+        shortcuts don't seem to work :( (might be worth tyring again)
 ``

@@ -26,6 +26,9 @@ alias gb="gulp build"
 alias gw="gulp clean; gulp build; gulp watch"
 alias gserve="gulp clean; gulp serve --open=false"
 
+#Sublime - Open project file if it exists, otherwise open dir. TODO: should probably change to a function and accept a parameter
+alias st="if [ -e *.sublime-project ]; then subl *.sublime-project; else subl .; fi"
+
 #Mirror
 alias mirror="sudo -u apache php packages/mirror/scripts/mirror.php"
 
