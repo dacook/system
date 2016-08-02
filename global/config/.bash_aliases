@@ -45,3 +45,4 @@ tgz() { tar -cvzf "$1.tgz" "$1"; echo -n "Done: "; du -h "$1.tgz"; } # Because I
 alias pserve="python -m SimpleHTTPServer 8080 2>/dev/null" # Start Python HTTP server in current dir. Note that the browser will cache requests because no uncacheable headers are sent. [There's no easy way](http://stackoverflow.com/questions/12499171/can-i-set-a-header-with-pythons-simplehttpserver).
 
 alias headers="curl -svI $1 2>/dev/null" # I don't know why this works.. I though aliases can't handle parameters.
+alias highlight-colon='sed -E -e "s/^([^:]*\:)/$GREEN\1$RESET/g"' #higlight everything before the first colon on each line.
