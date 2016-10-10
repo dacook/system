@@ -6,12 +6,14 @@
 	"installed_packages":
 	[
 		"Advanced CSV",
+		"ChangeQuotes",
 		"Color Highlighter",
 		"DocBlockr",
 		"Emmet",
 		"FreeMarker",
 		"Git",
 		"GitHubinator",
+		"Handlebars",
 		"Hosts",
 		"HTML-CSS-JS Prettify",
 		"INI",
@@ -27,6 +29,7 @@
 		"Syntax Highlighting for Sass",
 		"Terminal",
 		"Theme - Monokai",
-		"Tomorrow Color Schemes"
+		"Tomorrow Color Schemes",
+		"VAlign"
 	]
 }

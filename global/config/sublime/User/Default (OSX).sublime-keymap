@@ -15,5 +15,8 @@
 	// iso time (HH:MM:SS)
 	{ "keys": ["super+shift+;"],
 		"command": "insert_date",
-		"args": {"format": "%H:%M:%S"} }
+		"args": {"format": "%H:%M:%S"} },
+
+	// ChangeQuotes
+    { "keys": ["ctrl+shift+'"], "command": "change_quotes" }
 ]

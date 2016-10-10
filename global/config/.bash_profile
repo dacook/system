@@ -1,6 +1,7 @@
 
 # Environment Variables
-PATH=$PATH:~/system/global/bin
+# PATH=$PATH:~/system/global/bin
+PATH=$PATH:~/system/nix/scripts
 source ~/system/global/config/colours.sh
 
 # Simple Command Prompt
@@ -18,3 +19,6 @@ fi
 #if os eq 'osx'
 	source ~/system/osx/config/osx.bash_profile
 #fi
+
+# added by Anaconda2 4.1.1 installer
+export PATH="/Users/dcook/anaconda2/bin:$PATH"

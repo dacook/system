@@ -60,7 +60,22 @@
 			<key>text</key>
 			<string>Search Matrix Manuals for '{query}'</string>
 			<key>url</key>
-			<string>https://squiz-funnelback01.squiz.net/s/search.html?query={query}&amp;collection=matrix-manuals</string>
+			<string>https://matrix.squiz.net/search?query={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>B9F61D7B-BCDE-486C-AABE-06311EDA1483</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>sm</string>
+			<key>plusSpaces</key>
+			<false/>
+			<key>text</key>
+			<string>Search SquizMap with Funnelback for '{query}'</string>
+			<key>url</key>
+			<string>https://find.squiz.net/s/search.html?collection=squizmap&amp;query={query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>

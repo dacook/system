@@ -19,6 +19,7 @@ App Shortcuts
     Google Chrome.app
         View Source             cmd+U //same as firefox
         Task Manager            alt+shift+esc //similar to windows (from memory)
+        Matrix Keyword Helper   ctrl+w // using shift or cmd affects the way it's opened, and alt won't work
     Terminal.app
         Show Previous Tab       control+shift+tab  //or cmd+alt+left, or cmd+1
         Show Next Tab           control+tab        //or cmd+alt+right, or cmd+2
@@ -27,5 +28,6 @@ App Shortcuts
         Paste and Match Formatting  cmd+shift+V
         Repeat $1               cmd+shift+z //hrmmm can't find a way to do this
     Firefox.app
-        shortcuts don't seem to work :( (might be worth tyring again)
+        // shortcuts don't work :( https://bugzilla.mozilla.org/show_bug.cgi?id=429824 U
+        // Instead, use https://addons.mozilla.org/en-GB/firefox/addon/s3menu-wizard/ (or start using a third party app)
 ``
