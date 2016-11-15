@@ -2,5 +2,6 @@
     "enabled": true,
     "style": "none",
     "ha_style": "default",
-    "file_exts": [".css", ".sass", ".scss", ".less", ".styl", ".html", ".js", ".sublime-settings", ".tmTheme", ".stTheme"]
+    // Sometimes other numbers get treated as colours which looks silly, besides colours should only be defined in stylesheet files.
+    "file_exts": [".css", ".sass", ".scss", ".less", /*".html", ".js",*/ ".sublime-settings", ".tmTheme", ".stTheme"]
 }
