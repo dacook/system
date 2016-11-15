@@ -22,3 +22,4 @@ fi
 
 # added by Anaconda2 4.1.1 installer
 export PATH="/Users/dcook/anaconda2/bin:$PATH"
+PATH=~/bin:$PATH;

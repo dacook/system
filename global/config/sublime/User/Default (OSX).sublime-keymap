@@ -4,8 +4,6 @@
 	{ "keys": ["ctrl+shift+t"], "command": "open_terminal" },
 	{ "keys": ["super+shift+alt+t"], "command": "open_terminal_project_folder" },
 
-
-
 	// InsertDate: use semi-colon just like Google Sheets.
 	// iso date (YYYY-MM-DD)
 	{ "keys": ["super+;"],
@@ -18,5 +16,13 @@
 		"args": {"format": "%H:%M:%S"} },
 
 	// ChangeQuotes
-    { "keys": ["ctrl+shift+'"], "command": "change_quotes" }
+    { "keys": ["ctrl+shift+'"], "command": "change_quotes" },
+
+    // VAlign
+    { "keys": ["super+alt+\\"], "command": "valign" },
+
+    // GitHubinator: override VAlign's default binding
+    { "keys": ["super+\\"], "command": "githubinator", "args" : { "permalink": false }},
+    { "keys": ["shift+super+\\"], "command": "githubinator", "args" : { "permalink": true }}
+
 ]

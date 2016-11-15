@@ -1,5 +1,6 @@
 {
     "enabled": true,
     "style": "none",
-    "ha_style": "default"
+    "ha_style": "default",
+    "file_exts": [".css", ".sass", ".scss", ".less", ".styl", ".html", ".js", ".sublime-settings", ".tmTheme", ".stTheme"]
 }

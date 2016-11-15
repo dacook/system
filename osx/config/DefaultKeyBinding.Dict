@@ -1,6 +1,10 @@
 /* ~/Library/KeyBindings/DefaultKeyBinding.Dict
 ref:http://heisencoder.net/2008/04/fixing-up-mac-key-bindings-for-windows.html
 
+2016-10-25: change to paragraph instead of line. http://apple.stackexchange.com/a/16137/61710
+DefaultKeyBinding.dict is only used by the OSX API Cocoa, which is ignored by some old versions of Xcode (works with latest version 6.3.1), Terminal, and many cross-platform applications, now including HipChat.
+Looks like BTT is a better alternative.
+
 Here is a rough cheatsheet for syntax.
 Key Modifiers
 ^ : Ctrl
@@ -26,13 +30,13 @@ Help (Insert):\UF746
 */
 
 {
-"\UF729"   = "moveToBeginningOfLine:";                       /* Home         */
+"\UF729"   = "moveToBeginningOfParagraph:";                  /* Home         */
 "@\UF729"  = "moveToBeginningOfDocument:";                   /* Cmd  + Home  */
-"$\UF729"  = "moveToBeginningOfLineAndModifySelection:";     /* Shift + Home */
+"$\UF729"  = "moveToBeginningOfParagraphAndModifySelection:"; /* Shift + Home */
 "@$\UF729" = "moveToBeginningOfDocumentAndModifySelection:"; /* Shift + Cmd  + Home */
-"\UF72B"   = "moveToEndOfLine:";                             /* End          */
+"\UF72B"   = "moveToEndOfParagraph:";                        /* End          */
 "@\UF72B"  = "moveToEndOfDocument:";                         /* Cmd  + End   */
-"$\UF72B"  = "moveToEndOfLineAndModifySelection:";           /* Shift + End  */
+"$\UF72B"  = "moveToEndOfParagraphAndModifySelection:";      /* Shift + End  */
 "@$\UF72B" = "moveToEndOfDocumentAndModifySelection:";       /* Shift + Cmd  + End */
 "\UF72C"   = "pageUp:";                                      /* PageUp       */
 "\UF72D"   = "pageDown:";                                    /* PageDown     */
