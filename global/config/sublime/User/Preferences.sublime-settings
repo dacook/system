@@ -1,5 +1,6 @@
 {
 	"color_scheme": "Packages/User/SublimeLinter/Tomorrow-Night (SL).tmTheme",
+	"copy_with_empty_selection": false,
 	"font_size": 12,
 	"ignored_packages":
 	[

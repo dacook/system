@@ -9,7 +9,6 @@
 	{ "keys": ["super+;"],
 		"command": "insert_date",
 		"args": {"format": "%Y-%m-%d"} },
-
 	// iso time (HH:MM:SS)
 	{ "keys": ["super+shift+;"],
 		"command": "insert_date",
@@ -23,6 +22,8 @@
 
     // GitHubinator: override VAlign's default binding
     { "keys": ["super+\\"], "command": "githubinator", "args" : { "permalink": false }},
-    { "keys": ["shift+super+\\"], "command": "githubinator", "args" : { "permalink": true }}
+    { "keys": ["shift+super+\\"], "command": "githubinator", "args" : { "permalink": true }},
 
+    // MarkdownEditing: when shift+tab it is code folding for some reason. override:
+    { "keys": ["shift+tab"], "command": "unindent"}
 ]

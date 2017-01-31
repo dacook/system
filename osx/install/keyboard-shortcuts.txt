@@ -5,11 +5,15 @@ Mission Control
     Move left a space           ctrl+cmd+left  // Not ctrl+left because I keep accidentally pressing it
     Move left a right           ctrl+cmd+right
     Switch to Desktop 1         ctrl+cmd+1  //and so on
+    Show Dashboard              cmd+H // Because sometimes I accidentally press it, but I never want to instantly hide an app! So just do some other action.
 
 Keyboard
     Move focus to the menu bar  ctrl+/
     Move focus to active or next window  alt+tab //sound familiar?? This is the same as alt+tab in windows! :D
     Move focus to status menus  ctrl+shift+/
+
+Spotlight
+    Show Finder search window   cmd+Q //Because sometimes I accidentally press it, but I never want to instantly quit an app! So just do some other action.
 
 App Shortcuts  
     Mail.app

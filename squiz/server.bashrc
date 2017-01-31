@@ -14,3 +14,8 @@ if [ "$TERM" = "xterm-256color" ]; then
   grep -r 'SQ_CONF_SYSTEM_ROOT_URLS' */data/private/conf/main.inc
   ls -l
 fi
+
+
+# And funnelback
+# https://docs.funnelback.com/15.8/more/extra/warccat.html
+alias WarcCat='$SEARCH_HOME/linbin/java/bin/java -classpath "$SEARCH_HOME/lib/java/all/*" com.funnelback.warc.util.WarcCat'
