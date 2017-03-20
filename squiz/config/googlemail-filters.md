@@ -66,6 +66,10 @@ Unless they are responses from support tickets, or mentioning me.
     Matches: from:(jira@squiz.net) -{"David Cook" VICSR}
     Do this: Skip Inbox, Apply label "Notifications"
 
+## Zendesk
+    Matches: from:(support@squiz.net) "David Cook has added a"
+    Do this: Apply label "Notifications", Delete it
+
 ## Matrix
 
     Matches: subject:(Asset Lock Forcibly Acquired)
