@@ -77,3 +77,11 @@ Unless they are responses from support tickets, or mentioning me.
 
     Matches: from:(clients.squiz.net)
     Do this: Skip Inbox, Apply label "Notifications"
+
+## Google Calendar
+### Move invitations to Notifications
+Unless it is a reply.
+
+    Matches: to:(dcook@squiz.net) subject:("Invitation: ") -"> wrote:"
+    Do this: Skip Inbox, Apply label "Notifications"
+

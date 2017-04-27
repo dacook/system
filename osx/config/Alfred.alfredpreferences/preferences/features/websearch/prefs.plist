@@ -15,14 +15,14 @@
 			<key>text</key>
 			<string>Search OneSquiz for '{query}'</string>
 			<key>url</key>
-			<string>http://squiz-funnelback04.squiz.net/s/search.html?collection=onesearch-meta&amp;profile=_default_preview&amp;query={query}</string>
+			<string>https://find.squiz.systems/s/search.html?collection=onesearch-meta&amp;query={query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>
 		<key>3994E3A5-EA93-45EC-9B92-15CD86AD3398</key>
 		<dict>
 			<key>enabled</key>
-			<true/>
+			<false/>
 			<key>keyword</key>
 			<string>sf</string>
 			<key>plusSpaces</key>
