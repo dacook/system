@@ -1,5 +1,7 @@
 There's no easy way to export these, just set these up manually. (Or start using a third party app)
 
+Open up: System Preferences > Keyboard > Shortcuts.
+
 ```
 Mission Control
     Move left a space           ctrl+cmd+left  // Not ctrl+left because I keep accidentally pressing it
