@@ -7,6 +7,10 @@ matrix=/var/www/internet-prod/
 alias sudoa='sudo -u apache'
 alias matrixsqlclient='sudo -u apache php scripts/matrixsqlclient.php $PWD'
 alias mirror="sudo -u apache php packages/mirror/scripts/mirror.php"
+alias hr="echo -e \"\n$(tput setaf 1)-----------------------------$(tput sgr0)\n\"" # A red horizontal rule
+
+function datehr () { hr; date; hr }
+
 alias errlog='tail -f data/private/logs/error.log | grep --colour=always " - .*"'
 
 ## Bonus, show me what's here:

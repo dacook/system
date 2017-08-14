@@ -23,3 +23,5 @@ fi
 # added by Anaconda2 4.1.1 installer
 export PATH="/Users/dcook/anaconda2/bin:$PATH"
 PATH=~/bin:$PATH;
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

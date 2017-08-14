@@ -79,9 +79,14 @@ Unless they are responses from support tickets, or mentioning me.
     Do this: Skip Inbox, Apply label "Notifications"
 
 ## Google Calendar
-### Move invitations to Notifications
-Unless it is a reply.
+### Move invitations and updates to Notifications
+Unless it is a reply. Note this includes both "Invitation" and "Updated Invitation".
 
     Matches: to:(dcook@squiz.net) subject:("Invitation: ") -"> wrote:"
     Do this: Skip Inbox, Apply label "Notifications"
 
+### Move acceptances to Notifications
+Unless it is a reply. Don't search for "has accepted this invitation" in body because Outlook doesn't send it.
+
+    Matches: to:(dcook@squiz.net) subject:("Accepted: ") -"> wrote:"
+    Do this: Skip Inbox, Apply label "Notifications"

@@ -37,6 +37,7 @@ alias mirror="sudo -u apache php packages/mirror/scripts/mirror.php"
 alias pd="pushd" # a nice alternative to cd
 alias ll="ls -lh"
 alias la="ls -lah"
+alias ltr="ls -ltr | tail" #show most recent files in folder
 alias beep="tput bel"
 alias bell="beep"
 alias hr="echo -e \"\n${RED}-------------${RESET}\n\""
