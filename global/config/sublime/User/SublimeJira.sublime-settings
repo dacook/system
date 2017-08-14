@@ -1,0 +1,6 @@
+{
+  "jira_server": "https://jira.squiz.net",
+  "jira_login": "dcook",
+  "jira_password": "uh...", // pls wait for https://github.com/mix86/SublimeJira/issues/9
+  "jira_default_project": "MS"
+}
