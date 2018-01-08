@@ -1,7 +1,7 @@
 # Because sometimes you want to do it fast..
 # curl -s https://raw.githubusercontent.com/dacook/system/master/osx/scripts/hoffify.sh | bash
 
-imgsrc="http://www.flickeringmyth.com/wp-content/uploads/2015/03/hasselhoff.jpg"
+imgsrc="https://raw.githubusercontent.com/dacook/system/master/osx/scripts/hoffify-unsuspicious-image-file.jpg"
 imgpath="$PWD/unsuspicious-image-file.jpg"
 
 curl -o "$imgpath" "$imgsrc"
