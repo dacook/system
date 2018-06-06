@@ -1,15 +1,14 @@
 {
 	"bootstrapped": true,
-	"in_process_packages":
-	[
-	],
 	"installed_packages":
 	[
 		"Advanced CSV",
+		"Babel",
 		"ChangeQuotes",
 		"Color Highlighter",
 		"DashDoc",
 		"DocBlockr",
+		"EditorConfig",
 		"Emmet",
 		"FreeMarker",
 		"Git",
@@ -20,17 +19,14 @@
 		"INI",
 		"InsertDate",
 		"Jira",
-		"LineEndings",
 		"MarkdownEditing",
 		"Package Control",
 		"Pretty JSON",
 		"Sass",
 		"SublimeLinter",
-		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-contrib-scss-lint",
-		"Syntax Highlighting for Sass",
+		"SublimeLinter-eslint",
 		"Terminal",
-		"Theme - Monokai",
 		"Tomorrow Color Schemes",
 		"VAlign"
 	]
