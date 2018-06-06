@@ -3,6 +3,7 @@
 # PATH=$PATH:~/system/global/bin
 PATH=$PATH:~/system/nix/scripts
 source ~/system/global/config/colours.sh
+source ~/system/squiz/server.bashrc
 
 # Simple Command Prompt
 PS1='\[$BLUE\]\w \$\[$RESET\] '
@@ -25,3 +26,4 @@ export PATH="/Users/dcook/anaconda2/bin:$PATH"
 PATH=~/bin:$PATH;
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+export GROOVY_HOME=/usr/local/opt/groovy/libexec

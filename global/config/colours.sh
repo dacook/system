@@ -15,6 +15,10 @@ REVERSE=$(tput smso)
 UNDERLINE=$(tput smul)
 
 ## Can't remember why not just use the control codes directly. Note that tput is not available in Windows Powershell. Eg:
+RED=$(echo -en '\033[00;31m')
+GREEN=$(echo -en '\033[00;32m')
+YELLOW=$(echo -en '\033[00;33m')
+BLUE=$(echo -en '\033[00;34m')
 LIGHTBLACK=$(echo -en '\033[00;90m')
 BOLD=$(echo -en '\033[00;1m')
 RESET=$(echo -en '\033[00;0m')

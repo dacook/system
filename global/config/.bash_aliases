@@ -33,6 +33,7 @@ alias st="if [ -e *.sublime-project ]; then subl *.sublime-project; else subl .;
 alias mirror="sudo -u apache php packages/mirror/scripts/mirror.php"
 
 #Other
+function dt() { echo $( date +%Y-%m-%d ); }
 # alias rm="trash" # hasseg.org/trash #TODO: write a wrapper to better support rm flags
 alias pd="pushd" # a nice alternative to cd
 alias ll="ls -lh"
@@ -46,4 +47,5 @@ tgz() { tar -cvzf "$1.tgz" "$1"; echo -n "Done: "; du -h "$1.tgz"; } # Because I
 alias pserve="(sleep 1; open http://0.0.0.0:8080) & python -m SimpleHTTPServer 8080 2>/dev/null;" # Start Python HTTP server in current dir and open in browser. Note that the browser will cache requests because no uncacheable headers are sent. [There's no easy way](http://stackoverflow.com/questions/12499171/can-i-set-a-header-with-pythons-simplehttpserver).
 
 alias headers="curl -svI $1 2>/dev/null" # I don't know why this works.. I though aliases can't handle parameters. but note that -I sends a HEAD instead of GET, which may produce different results.
+alias vcurl="curl -sv $1 >/dev/null" # verbose curl
 alias highlight-colon='sed -E -e "s/^([^:]*\:)/$GREEN\1$RESET/g"' #higlight everything before the first colon on each line.
