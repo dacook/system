@@ -1,5 +1,8 @@
 {
 	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"Advanced CSV",
@@ -11,7 +14,6 @@
 		"EditorConfig",
 		"Emmet",
 		"FreeMarker",
-		"Git",
 		"GitHubinator",
 		"Handlebars",
 		"Hosts",
@@ -23,6 +25,7 @@
 		"Package Control",
 		"Pretty JSON",
 		"Sass",
+		"SublimeGit",
 		"SublimeLinter",
 		"SublimeLinter-contrib-scss-lint",
 		"SublimeLinter-eslint",
