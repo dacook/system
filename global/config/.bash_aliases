@@ -7,7 +7,7 @@ alias ss="svn status"
 alias sd="svn diff \"$@\" | less -R" # make svn diff scrollable
 
 #GIT
-function gitRemoteBranch() { git status --porcelain -b | sed 's/^.*\.//'; }
+function gitRemoteBranch() { git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD); }
 alias gs="git status"
 alias gd="git diff"
 alias gdc="git diff --cached" # Diff staged changes
