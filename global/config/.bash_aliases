@@ -7,13 +7,15 @@ alias ss="svn status"
 alias sd="svn diff \"$@\" | less -R" # make svn diff scrollable
 
 #GIT
+function gitRemoteBranch() { git status --porcelain -b | sed 's/^.*\.//'; }
 alias gs="git status"
 alias gd="git diff"
 alias gdc="git diff --cached" # Diff staged changes
 # alias gdt="git difftool -t opendiff -y" #use Xcode’s FileMerge
 alias gdt="git difftool -t diffmerge -y"
-alias gp="git pull --rebase"
-alias ga="git add --all"
+alias gp="git pull --rebase" 
+alias gr="git rebase $( gitRemoteBranch )" # Quick git pull (no fetch)
+alias ga="git add --all" 
 # alias gci="git commit -m \"$@\""
 # gci() { git commit -m "$@"; }  # Can't get these to work, but probably better not to make committing too easy.
 
@@ -25,6 +27,7 @@ alias gitlab="/usr/local/bin/gitlab"
 alias gb="gulp build"
 alias gw="gulp clean; gulp build; gulp watch"
 alias gserve="gulp clean; gulp serve --open=false"
+alias devts="npm run dev:ts"
 
 #Sublime - Open project file if it exists, otherwise open dir. TODO: should probably change to a function and accept a parameter
 alias st="if [ -e *.sublime-project ]; then subl *.sublime-project; else subl .; fi"
