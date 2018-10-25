@@ -1,0 +1,3 @@
+todo: document here, and share. if only there was an extenstion to export them
+
+new one Jira project search

@@ -10,5 +10,6 @@
 	"save_on_focus_lost": true,
 	"shift_tab_unindent": true,
 	"show_definitions": false,
-	"translate_tabs_to_spaces": false
+	"translate_tabs_to_spaces": false,
+	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?"
 }

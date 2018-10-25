@@ -13,6 +13,7 @@
 		"DocBlockr",
 		"EditorConfig",
 		"Emmet",
+		"ESLint",
 		"FreeMarker",
 		"GitHubinator",
 		"Handlebars",
@@ -30,6 +31,7 @@
 		"SublimeLinter-contrib-scss-lint",
 		"SublimeLinter-eslint",
 		"Terminal",
+		"Terminus",
 		"Tomorrow Color Schemes",
 		"VAlign"
 	]
