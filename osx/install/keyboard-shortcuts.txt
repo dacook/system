@@ -36,4 +36,6 @@ App Shortcuts
     Firefox.app
         // shortcuts don't work :( https://bugzilla.mozilla.org/show_bug.cgi?id=429824 U
         // Instead, use https://addons.mozilla.org/en-GB/firefox/addon/s3menu-wizard/ (or start using a third party app)
+    sublime
+        Wrap at 120  ctrl+cmd+Q //would like to do this in sublime keymapping but don't know how to find the command name
 ``

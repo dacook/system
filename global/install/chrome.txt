@@ -1,1 +1,3 @@
 chrome://flags/#enable-native-notifications
+
+chrome://flags/#proactive-tab-freeze-and-discard

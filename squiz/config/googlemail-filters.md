@@ -63,7 +63,7 @@ Other types:
 ### Move most others as Notifications
 Unless they are responses from support tickets, or mentioning me.
 
-    Matches: from:(jira@squiz.net) -{"David Cook" VICSR}
+    Matches: from:(jira@squiz.net) -{"David Cook" SDVIC SDVST}
     Do this: Skip Inbox, Apply label "Notifications"
 
 ## Zendesk

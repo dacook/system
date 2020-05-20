@@ -1,4 +1,7 @@
 [
+	// Reveal in sidebar
+	{ "keys": ["super+shift+r"], "command": "reveal_in_side_bar"},
+
 	// Terminal
 	{ "keys": ["super+shift+t"], "command": "reopen_last_file" }, //override terminal's silly default binding (https://github.com/wbond/sublime_terminal/issues/17)
 	{ "keys": ["ctrl+shift+t"], "command": "open_terminal" },
@@ -25,5 +28,18 @@
     { "keys": ["shift+super+\\"], "command": "githubinator", "args" : { "permalink": true }},
 
     // MarkdownEditing: when shift+tab it is code folding for some reason. override:
-    { "keys": ["shift+tab"], "command": "unindent"}
+    { "keys": ["shift+tab"], "command": "unindent"},
+
+    // Wrap paragraph at 120
+    { "keys": ["ctrl+super+q"], "command": "wrap_lines", "args": { "width": 120 }	},
+
+
+	// Replace panel key binding (defaults conflict with Magnet). Doesn't work.. :(
+    	{ "keys": ["super+alt+enter"], "command": "replace_all", "args": {"close_panel": true},
+		 "context": [{"key": "panel", "operand": "replace"}, {"key": "panel_has_focus"}]
+	},
+	// Find in Files panel key binding (defaults conflict with Magnet)
+		{ "keys": ["super+alt+enter"], "command": "replace_all",
+		 "context": [{"key": "panel", "operand": "find_in_files"}, {"key": "panel_has_focus"}]
+	},
 ]

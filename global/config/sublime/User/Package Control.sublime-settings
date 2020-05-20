@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"Advanced CSV",
+		"Alignment",
 		"Babel",
 		"ChangeQuotes",
 		"Color Highlighter",
@@ -26,13 +27,24 @@
 		"Package Control",
 		"Pretty JSON",
 		"Sass",
+		"sublime_valign",
 		"SublimeGit",
-		"SublimeLinter",
 		"SublimeLinter-contrib-scss-lint",
 		"SublimeLinter-eslint",
+		"SyncedSideBar",
 		"Terminal",
 		"Terminus",
 		"Tomorrow Color Schemes",
-		"VAlign"
+		"TypeScript Syntax",
+		"VAlign",
+		"Vue Syntax Highlight",
+		"VueFormatter",
+		"Vuetify",
+		"W3CValidators"
+	],
+	"repositories":
+	[
+		"https://github.com/jarod2d/sublime_valign",
+		"https://github.com/victorporof/Sublime-HTMLPrettify"
 	]
 }
