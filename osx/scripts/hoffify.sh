@@ -12,9 +12,9 @@ osascript -e "tell application \"System Events\" to set picture of every desktop
 
 ## More trolling
 echo 'I love David Hasselhoff' | pbcopy
-echo "Also, free chocolates on my desk, come and get them!" | mail -s "I have been Hoffed" melbourne@squiz.net
+# echo "Also, free chocolates on my desk, come and get them!" | mail -s "I have been Hoffed" example@email.com
 # can't seem to send uuencoded file attachments.. spam filter stops it and mail client can't display it anyway.
-# (echo "Also, free chocolates on my desk, come and get them!"; uuencode $imgpath unsuspicious-image-file.jpg) | mail -s "I have been Hoffed" melbourne@squiz.net
+# (echo "Also, free chocolates on my desk, come and get them!"; uuencode $imgpath unsuspicious-image-file.jpg) | mail -s "I have been Hoffed" example@email.com
 
 ## Say "Balls" randomly with a random voice every hour or so.. forever!
 {
