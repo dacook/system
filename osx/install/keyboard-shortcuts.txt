@@ -4,7 +4,7 @@ Open up: System Preferences > Keyboard > Shortcuts.
 
 ```
 Mission Control
-    Move left a space           ctrl+cmd+left  // Not ctrl+left because I keep accidentally pressing it
+    Move left a space           ctrl+cmd+left  // Not ctrl+left because I tried to learn the default and my brain didn't like it. also sometimes I accidentally press it. 
     Move left a right           ctrl+cmd+right
     Switch to Desktop 1         ctrl+cmd+1  //and so on
     Show Dashboard              cmd+H // Because sometimes I accidentally press it, but I never want to instantly hide an app! So just do some other action.
@@ -38,4 +38,6 @@ App Shortcuts
         // Instead, use https://addons.mozilla.org/en-GB/firefox/addon/s3menu-wizard/ (or start using a third party app)
     sublime
         Wrap at 120  ctrl+cmd+Q //would like to do this in sublime keymapping but don't know how to find the command name
+    Slack
+        Reload                  cmd+W (because sometimes I press it by accident and it closes the whole window)
 ``

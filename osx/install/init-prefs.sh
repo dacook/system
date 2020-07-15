@@ -9,17 +9,17 @@ echo $config
 # 	ln -snf "$config/Library/Services"
 # popd
 
-# Key bindings for Home and End keys
+# Key bindings for Home and End keys.
 mkdir -pv ~/Library/KeyBindings
 pushd ~/Library/KeyBindings
 	ln -snf "$config/DefaultKeyBinding.Dict"
 popd
 
 # Alfred preferences (not sync folder because I'm too cheap for powerpack ;)
-pushd ~/Library/Application\ Support/Alfred\ 2/
-	mv Alfred.alfredpreferences Alfred.alfredpreferences.bak
-	ln -snf "$config/Alfred.alfredpreferences"
-popd
+# pushd ~/Library/Application\ Support/Alfred\ 2/
+# 	mv Alfred.alfredpreferences Alfred.alfredpreferences.bak
+# 	ln -snf "$config/Alfred.alfredpreferences"
+# popd
 
 ## Try to prevent the network interfaces being shutdown when locking the screen
 pushd /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources

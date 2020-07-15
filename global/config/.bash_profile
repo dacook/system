@@ -2,8 +2,8 @@
 # Environment Variables
 # PATH=$PATH:~/system/global/bin
 PATH=$PATH:~/system/nix/scripts
+PATH=$PATH:/Applications/Meld.app/Contents/MacOS ## TODO: install proerly, I think whtih a symbolic link
 source ~/system/global/config/colours.sh
-source ~/system/squiz/server.bashrc
 
 # Simple Command Prompt
 PS1='\[$BLUE\]\w \$\[$RESET\] '
@@ -12,20 +12,21 @@ PS1='\[$BLUE\]\w \$\[$RESET\] '
 source ~/.bash_aliases
 
 # Features
+# Git completion from here: https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 if [ -f ~/system/global/config/git-completion.bash ]; then
   . ~/system/global/config/git-completion.bash
 fi
 
 # Env specific
-#if os eq 'osx'
+#if os eq 'osx' (assume it is)
 	source ~/system/osx/config/osx.bash_profile
+	export BASH_SILENCE_DEPRECATION_WARNING=1
 #fi
-
-# added by Anaconda2 4.1.1 installer
-export PATH="/Users/dcook/anaconda2/bin:$PATH"
-PATH=~/bin:$PATH;
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# todo: is there a good way to automatically switch? Maybe introduce a sprintf param (%)
+export FIREFOX_BINARY_PATH="tmp/firefox-`cat .firefox-version`/Firefox.app/Contents/MacOS/firefox"

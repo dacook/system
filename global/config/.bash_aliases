@@ -1,6 +1,9 @@
 # David's Aliases
 # check out some more cool ideas here: http://natelandau.com/my-mac-osx-bash_profile/
 
+# Load global aliases (these can also copied onto servers) -- actually this file is already the global one! anything not global would be env-specific
+# . ~/system/global/config/global.bash_aliases
+
 #SVN
 alias sup="svn update"
 alias ss="svn status"
@@ -16,34 +19,30 @@ alias gdt="git difftool -t diffmerge -y" #diffmerge is better
 alias gp="git pull" 
 alias gpr="git pull --rebase" 
 # alias gr="git rebase $( gitRemoteBranch )" # Quick git pull (no fetch) # actually I think what I want is rebase with no params. hmm why not just merge $( gitRemoteBranch )
-alias gpq="git merge --ff-only $(gitRemoteBranch)" # Quick git pull (no fetch, just fast-forward to last known commit) 
+alias gpq="git merge --ff-only \$(gitRemoteBranch)" # Quick git pull (no fetch, just fast-forward to last known commit) 
 alias ga="git add --all" 
 # alias gci="git commit -m \"$@\""
 # gci() { git commit -m "$@"; }  # Can't get these to work, but probably better not to make committing too easy.
 
-# Can't be bothered figuring out how to fix this properly
-alias gitlab="/usr/local/bin/gitlab"
-
-#Boilerplate (Gulp)
-# I once had a really confusing issue that was solved by running grunt clean. So it's worth doing regularly.
-alias gb="gulp build"
-alias gw="gulp clean; gulp build; gulp watch"
-alias gserve="gulp clean; gulp serve --open=false"
-alias devts="npm run dev:ts"
+# Ruby
+alias be="bundle exec"
+alias rserver="bundle exec rails server"
+alias rconsole="bundle exec rails console"
+# Rubocop on uncommitted files or files modified since master. Hmm but if I run without bundle it's super fast anyway.
+alias rcu="git ls-files -m | xargs ls -1 2>/dev/null | xargs bundle exec rubocop"
+alias rcm="git diff-tree -r --no-commit-id --name-only head origin/master | xargs bundle exec rubocop"
 
 #Sublime - Open project file if it exists, otherwise open dir. TODO: should probably change to a function and accept a parameter
 alias st="if [ -e *.sublime-project ]; then subl *.sublime-project; else subl .; fi"
 
-#Mirror
-# alias mirror="sudo -u apache php packages/mirror/scripts/mirror.php"
-alias mirror="packages/mirror/mirror"
 
-#Other
+#General
 function dt() { echo $( date +%Y-%m-%d ); }
 # alias rm="trash" # hasseg.org/trash #TODO: write a wrapper to better support rm flags
 alias pd="pushd" # a nice alternative to cd
-alias ll="ls -lh"
-alias la="ls -lah"
+# List in long format, with human-readable filesizes and show slashes for folders
+alias ll="ls -lhF"
+alias la="ls -lahF"
 alias ltr="ls -ltr | tail" #show most recent files in folder
 alias beep="tput bel"
 alias bell="beep"
