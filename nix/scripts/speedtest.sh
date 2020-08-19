@@ -1,15 +1,15 @@
-#GAH, I knew I should have stopped 40 mins ago.. srsly. can't strip all newlines because we want the header. date would be better at start of line. better to just add hardcoded header.
-
-
 out=speedtest.csv 
-args=("--format=csv" "--progress=yes") #sadly progress doesn't work in csv mode
+args="--format=csv"
 
+# Hardcoded header row because it was simpler than working with generated one
 if [[ ! -s $out ]]; then
-  args+=("--output-header")
+  echo '"date","server name","server id","latency","jitter","packet loss","download","upload","download bytes","upload bytes","share url"' >> $out
 fi
 
-# Run speedtest and output results or errors to file (without newline)
-echo $(speedtest ${args[@]} 2>&1) | tr -d "\n" >> $out
+# Add as first column to line
+echo -n '"'`date`'"', >> $out
 
-# Append date to line
-echo ,'"'`date`'"' >> $out
+# Run speedtest and output results to file
+speedtest $args >> $out
+
+# Doesn't handle errors, results in an unfinished line. TODO: redirect first line of stderr to file 
