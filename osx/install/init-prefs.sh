@@ -9,10 +9,10 @@ echo $config
 # 	ln -snf "$config/Library/Services"
 # popd
 
-# Key bindings for Home and End keys.
+# Key bindings for Home and End keys. (probably requires restart)
 mkdir -pv ~/Library/KeyBindings
 pushd ~/Library/KeyBindings
-	ln -snf "$config/DefaultKeyBinding.Dict"
+	ln -snf "$config/Library/KeyBindings/DefaultKeyBinding.Dict"
 popd
 
 # Alfred preferences (not sync folder because I'm too cheap for powerpack ;)

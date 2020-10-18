@@ -28,5 +28,7 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-# todo: is there a good way to automatically switch? Maybe introduce a sprintf param (%)
-export FIREFOX_BINARY_PATH="tmp/firefox-`cat .firefox-version`/Firefox.app/Contents/MacOS/firefox"
+export FF="tmp/firefox-%s/Firefox.app/Contents/MacOS/firefox"
+export FF45="tmp/firefox-45.9.0esr/Firefox.app/Contents/MacOS/firefox"
+
+export FIREFOX_BINARY_PATH=$FF45

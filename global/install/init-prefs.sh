@@ -43,7 +43,8 @@ git config --global alias.merge-upstream '!git fetch upstream && git merge upstr
 # git config --global alias.showtool "!showci () { rev=$(git rev-parse \"${*:-HEAD}\"); git difftool $rev~1 $rev; }; showci" # https://stackoverflow.com/a/33975521/421243
 git config --global difftool.prompt false
 # git config --global difftool.diffmerge.cmd 'diffmerge "$LOCAL" "$REMOTE"'
-# git config --global diff.tool diffmerge
+git config --global difftool.meld.cmd 'meld "$LOCAL" "$REMOTE"'
+git config --global diff.tool meld
 # git config --global merge.tool diffmerge
 # git config --global mergetool.diffmerge.cmd 'diffmerge --merge --result="$MERGED" "$LOCAL" "$(if test -f "$BASE"; then echo "$BASE"; else echo "$LOCAL"; fi)" "$REMOTE"'
 # git config --global mergetool.diffmerge.trustExitCode true
