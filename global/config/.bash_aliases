@@ -19,7 +19,7 @@ alias gdc="git diff --cached" # Diff staged changes
 alias gdt="git difftool --dir-diff"
 alias gp="git pull" 
 alias gpr="git pull --rebase" 
-# alias gr="git rebase $( gitRemoteBranch )" # Quick git pull (no fetch) # actually I think what I want is rebase with no params. hmm why not just merge $( gitRemoteBranch )
+# alias gr="git rebase \$( gitRemoteBranch )" # Quick git pull (no fetch) # actually I think what I want is rebase with no params. hmm why not just merge $( gitRemoteBranch )
 alias gpq="git merge --ff-only \$(gitRemoteBranch)" # Quick git pull (no fetch, just fast-forward to last known commit) 
 alias ga="git add --all" 
 # alias gci="git commit -m \"$@\""
@@ -38,13 +38,13 @@ alias headless="FIREFOX_ARGS=-headless bundle exec" #run with headless arg
 # Run rspec with zeus if running, else bundle
 alias rspec='$(zeus rspec > /dev/null && echo "zeus" || echo "bundle exec") rspec'
 
-#WIP Test any recently updated files. can it be cleaner?
+#WIP Test any recently updated files. can it be cleaner? also handle when there's none.
 function recent-ruby-files() {
   MINS=120
   echo $(gfind . -type f -cmin -$MINS -not -path '*/\.*' -not -path './log/*' -path '.rb' -printf '%p ')
 }
-alias rspec-recent="rspec $(recent-ruby-files)"
-alias rubocop-recent="rubocop $(recent-ruby-files)"
+alias rspec-recent="rspec \$(recent-ruby-files)"
+alias rubocop-recent="rubocop \$(recent-ruby-files)"
 
 #Sublime - Open project file if it exists, otherwise open dir. TODO: should probably change to a function and accept a parameter
 alias st="if [ -e *.sublime-project ]; then subl *.sublime-project; else subl .; fi"
