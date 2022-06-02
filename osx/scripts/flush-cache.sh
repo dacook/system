@@ -3,4 +3,4 @@
 
 sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder && echo "Cache flushed."
 
-#or, turn wifi connection off and on again.
+#or, turn wifi connection off and on again. That seems to be more effective on Chrome.

@@ -8,6 +8,9 @@ source ~/system/global/config/colours.sh
 # Simple Command Prompt
 PS1='\[$BLUE\]\w \$\[$RESET\] '
 
+# Parallel specs config
+export PARALLEL_TEST_PROCESSORS=4 # use only half of 8 cpu cores so I can still multitask
+
 # Aliases
 source ~/.bash_aliases
 
@@ -28,7 +31,9 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-export FF="tmp/firefox-%s/Firefox.app/Contents/MacOS/firefox"
 export FF45="tmp/firefox-45.9.0esr/Firefox.app/Contents/MacOS/firefox"
+export FF="tmp/firefox-%s/Firefox.app/Contents/MacOS/firefox"
+export FIREFOX_BINARY_PATH=$FF
+export FIREFOX_ARGS=-headless #-jsconsole
 
-export FIREFOX_BINARY_PATH=$FF45
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
