@@ -52,8 +52,9 @@ alias headful="FIREFOX_ARGS= "
 alias rspecjs="bundle exec rspec --tag=js spec/features/" #run non-browser feature tests (? or only browser tests?)
 
 #run quickest (unit) tests. use with --fail-fast OR, just run whole suite in background first, then cycle through failures with -n
-#TOFIX it's not excluding with exclude-pattern
-alias rspecquick="bundle exec parallel_rspec -n $PARALLEL_TEST_PROCESSORS -- --tag ~type:feature --exclude-pattern \"**/big_spreadsheet_spec.rb\" --exclude-pattern \"**/process_excel_job_spec.rb\" --exclude-pattern \"*new_users_csv*\" -- "
+RSPECQUICK_EXCLUDE="spec/features/|big_spreadsheet|process_excel_job|new_users_csv" # ignore browser, slow and flaky specs
+alias rspecquick="bundle exec parallel_rspec -n $PARALLEL_TEST_PROCESSORS --exclude-pattern \"$RSPECQUICK_EXCLUDE\"" # parallel_rspec uses regex for exclude-pattern. Not to be confused with rspec param of same name.
+# alias rspecquick="rspec --tag ~type:feature --exclude-pattern \"**/big_spreadsheet_spec.rb,**/process_excel_job_spec.rb,**/*new_users_csv*\"" ## using rspec exclude by glob
 alias pspec="bundle exec rake parallel:spec"
 
 ## disabled because autoloading is failing in spring.
