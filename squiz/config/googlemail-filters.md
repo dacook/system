@@ -1,6 +1,6 @@
 # Googlemail filters
 
-## Squizmap 
+## Squizmap
 Tip: set project notifications setting to 'as changes are made' to ensure messages are unlikely to be batched (https://squizmap.squiz.net/roadmap/6351).
 Although these filters should work with batched emails anyway.
 
@@ -8,7 +8,7 @@ Although these filters should work with batched emails anyway.
     Matches: from:no-reply@squizmap.squiz.net subject:"has 1" subject:"Idea" "David Cook added"
     Do this: Apply label "Notifications", Delete it
 
-### Whitelist notification types 
+### Whitelist notification types
 Delete notifications unless they are types that I'm interested in
 
     Matches: from:(no-reply@squizmap.squiz.net) -{"added a new Idea" "added a new comment" "Assignee changed to David Cook" "Idea moved" "Status changed to Closed" "Idea deleted"}
@@ -37,7 +37,7 @@ Other types that I didn't want:
     Matches: "From the" "project in Squiz Projects" subject:"has 1" subject:"Idea" "David Cook added"
     Do this: Apply label "Notifications", Delete it
 
-### Whitelist notification types 
+### Whitelist notification types
 Delete notifications unless they are types that I'm interested in. For some reason this instance is configured to send with your email address.
 
     Matches: "From the" "project in Squiz Projects"  -{"added a new Idea" "added a new comment" "Assignee changed to David Cook" "Idea moved" "Status changed to Closed" "Idea deleted"}

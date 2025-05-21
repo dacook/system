@@ -1,4 +1,5 @@
 # Terminal colours
+RESET=$(tput sgr0)
 BLACK=$(tput setaf 0)
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
@@ -9,7 +10,6 @@ CYAN=$(tput setaf 6)
 WHITE=$(tput setaf 7)
 LIGHTBLACK=$(tput setaf 8)
 BOLD=$(tput bold)
-RESET=$(tput sgr0)
 BLINK=$(tput blink)
 REVERSE=$(tput smso)
 UNDERLINE=$(tput smul)

@@ -3,6 +3,7 @@
 # PATH=$PATH:~/system/global/bin
 PATH=$PATH:~/system/nix/scripts
 PATH=$PATH:/Applications/Meld.app/Contents/MacOS ## TODO: install proerly, I think whtih a symbolic link
+
 source ~/system/global/config/colours.sh
 
 # Simple Command Prompt
@@ -37,3 +38,20 @@ export FIREFOX_BINARY_PATH=$FF
 export FIREFOX_ARGS=-headless #-jsconsole
 
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export PATH="/Users/dcook/projects/openfoodnetwork:$PATH"
+export PATH="/Users/dcook/bin:$PATH"
+
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+eval "$(pyenv init -)"
+
+# Nodenv
+eval "$(nodenv init -)"
+
+# OFN-specific config
+export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible-vault-password
+# export FETCH_OFN_SECRETS=TRUE  # disabled because https://github.com/openfoodfoundation/ofn-install/issues/861
+
+# Added by `rbenv init` on Tue 17 Dec 2024 11:24:49 AEDT
+# eval "$(~/.rbenv/bin/rbenv init - --no-rehash bash)"

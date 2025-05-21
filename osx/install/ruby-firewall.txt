@@ -1,0 +1,6 @@
+# I kept getting a firewall notice like this:
+# Do you want the application "AppName.app" to accept incoming network connections?
+# For some reason it's not remembering my preference. This seems to have helped (choose specific ruby version currently in use)
+
+# https://apple.stackexchange.com/a/150711/61710
+sudo codesign --force --deep --sign -  ~/.rbenv/versions/3.0.4/bin/ruby

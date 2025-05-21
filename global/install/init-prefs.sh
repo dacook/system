@@ -18,10 +18,10 @@ pushd $home/
 popd
 
 ## Link Sublime user config
-pushd "$home/Library/Application Support/Sublime Text 3/Packages"
-    mv User User.bak
-	ln -snf "$config/sublime/User"
-popd
+# pushd "$home/Library/Application Support/Sublime Text 3/Packages"
+#     mv User User.bak
+# 	ln -snf "$config/sublime/User"
+# popd
 
 ## DiffMerge
 # pushd $home/Library/Preferences/
@@ -35,14 +35,24 @@ git config --global push.default current # set upstream branchname to current br
 git config --global alias.co checkout
 git config --global alias.br "branch --sort=-committerdate" # recent branches
 git config --global alias.ci commit
+git config --global alias.ca commit -a
+git config --global alias.cimend commit  --amend
+git config --global alias.camend commit -a --amend
+git config --global alias.wip "commit -a -m 'WIP' -m '[skip ci]' --no-verify"
+git config --global alias.wiptest "commit -a -m 'WIP - passing tests?' --no-verify"
 git config --global alias.st status
 git config --global alias.cp cherry-pick
 # https://gist.github.com/dacook/7eddd0c97b2844cc9157ba2e2f0470bd
 git config --global alias.hist "log --pretty=format:'%C(blue)%ad%C(reset) %C(yellow)%h%C(reset) %C(green)%an%C(reset): %s %C(blue)%d%C(reset)' --graph --date=short"
+git config --global alias.l "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'"
 git config --global alias.merge-upstream '!git fetch upstream && git merge upstream/master' #it may be tempting to rebase, but don't
 ### DiffMerge (http://twobitlabs.com/2011/08/install-diffmerge-git-mac-os-x/)
 git config --global alias.showtool '!showci () { rev=$(git rev-parse "${*:-HEAD}"); git difftool $rev~1 $rev; }; showci' # https://stackoverflow.com/a/33975521/421243
 git config --global alias.rc "rebase --continue"
+git config --global alias.stash-show "stash show -p" # Show stash with a patch just like you'd expect it to
+git config --global alias.tag "v --list 'v*' --sort v:refname"
+git config --global alias.pf push --force-with-lease
+
 
 
 git config --global difftool.prompt false
@@ -53,3 +63,6 @@ git config --global diff.tool meld
 # git config --global mergetool.diffmerge.cmd 'diffmerge --merge --result="$MERGED" "$LOCAL" "$(if test -f "$BASE"; then echo "$BASE"; else echo "$LOCAL"; fi)" "$REMOTE"'
 # git config --global mergetool.diffmerge.trustExitCode true
 git config --global core.editor "vim -f" #https://stackoverflow.com/a/22699894/421243
+
+
+bundle config set --global auto_install true # Automatically run bundle install when gems are missing.

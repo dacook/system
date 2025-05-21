@@ -18,6 +18,12 @@ Spotlight
     Show Finder search window   cmd+Q //Because sometimes I accidentally press it, but I never want to instantly quit an app! So just do some other action.
 
 App Shortcuts  
+    All Applications
+        Show Help menu          cmd+shift+/
+        Get Info                cmd+I
+        View Source             cmd+U
+        Minimise                ctrl+M // Default is cmd+m, but I often press it by accident
+        Minimize                ctrl+M
     Mail.app
         Send                    cmd+return
         Paste and Match Style   cmd+shift+V

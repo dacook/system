@@ -25,3 +25,7 @@ popd
 pushd /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources
 	sudo ./airport en0 prefs DisconnectOnLogout=NO
 popd
+
+# Set default launcher for text files: Sublime Text 4 (https://apple.stackexchange.com/questions/123833/replace-text-edit-as-the-default-text-editor/123834#123834)
+defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=public.plain-text;LSHandlerRoleAll=com.sublimetext.4;}'
+defaults write com.apple.LaunchServices/com.apple.launchservices.secure LSHandlers -array-add '{LSHandlerContentType=public.data;LSHandlerRoleAll=com.sublimetext.4;}'
