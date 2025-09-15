@@ -13,6 +13,7 @@ alias sd="svn diff \"$@\" | less -R" # make svn diff scrollable
 function gitCurrentBranch() { git rev-parse --abbrev-ref HEAD; }
 function gitRemoteBranch() { git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD); }
 alias gs="git status"
+alias GS="git status" # you'd be surprised how often I type this by accident.
 alias gd="git diff"
 alias gdc="git diff --cached" # Diff staged changes
 # alias gdt="git difftool -t opendiff -y" #use Xcode’s FileMerge
@@ -116,6 +117,7 @@ alias lessg='less -nr +G' # Less with no line Numbers, show Raw characters (colo
 alias lessf='less -nr +F' # Less with no line Numbers, show Raw characters (colours and utf8), Follow
 alias beep="tput bel"
 alias bell="beep"
+alias bottle="afplay /System/Library/Sounds/Bottle.aiff"
 alias hr="echo -e \"\n${RED}-------------${RESET}\n\""
 tgz() { tar -cvzf "$1.tgz" "$1"; echo -n "Done: "; du -h "$1.tgz"; } # Because I can never remember how to
 #alias watchlog="watch 'df -h /dev/xvda1; ls -tr *.log; tail `ls -t *.log | head -n1`'" # Watch disk space and most recent log file
@@ -132,12 +134,22 @@ alias fix-spotlight='find . -type d -name "node_modules" -exec touch "{}/.metada
 # Diff styled just like in Git https://stackoverflow.com/a/25430324/421243
 function gdiff () { diff -u $@ | colordiff | less -R; }
 
-# Run command if last comment succeeded (handy for adding a conditional command while a command is still running)
+# Run command and alert with success or fail sound
+function beep_on_end(){
+  "$@"
+  if [ $? -le 0 ]; then
+    beep # success
+  else
+    bottle # error
+  fi
+}
+
+# Run command if last command succeeded (handy for adding a conditional command while a command is still running)
 function andrun(){ $(exit $?) && "$@"; }
-alias and="andrun $@"
+alias and="beep_on_end andrun $@"
 # Run command if last comment failed
 function orrun(){ $(exit $?) || "$@"; }
-alias or="orrun $@"
+alias or="beep_on_end orrun $@"
 
 # A timer https://apple.stackexchange.com/a/353314/61710
 # TODO: try it out and upvote
