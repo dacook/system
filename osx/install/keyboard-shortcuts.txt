@@ -20,10 +20,17 @@ Spotlight
 App Shortcuts  
     All Applications
         Show Help menu          cmd+shift+/
+        // macos finally has window tiling yay!
+        Return to Previous Size ctrl+alt+down
+        Fill                    ctrl+alt+up
+        Right                   ctrl+alt+right
+        Left                    ctrl+alt+left
         Get Info                cmd+I
         View Source             cmd+U
         Minimise                ctrl+M // Default is cmd+m, but I often press it by accident
         Minimize                ctrl+M
+        Move to DELL P2418HZm   ctrl+alt+1
+        Move to Built-in Retina Display ctrl+alt+2
     Mail.app
         Send                    cmd+return
         Paste and Match Style   cmd+shift+V
@@ -46,4 +53,4 @@ App Shortcuts
         Wrap at 120  ctrl+cmd+Q //would like to do this in sublime keymapping but don't know how to find the command name
     Slack
         Reload                  cmd+W (because sometimes I press it by accident and it closes the whole window)
-``
+```

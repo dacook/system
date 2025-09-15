@@ -35,9 +35,10 @@ git config --global push.default current # set upstream branchname to current br
 git config --global alias.co checkout
 git config --global alias.br "branch --sort=-committerdate" # recent branches
 git config --global alias.ci commit
-git config --global alias.ca commit -a
-git config --global alias.cimend commit  --amend
-git config --global alias.camend commit -a --amend
+git config --global alias.cia "commit -a"
+git config --global alias.ca "commit --amend"
+# git config --global alias.cimend commit  --amend
+# git config --global alias.camend commit -a --amend
 git config --global alias.wip "commit -a -m 'WIP' -m '[skip ci]' --no-verify"
 git config --global alias.wiptest "commit -a -m 'WIP - passing tests?' --no-verify"
 git config --global alias.st status
